@@ -1,4 +1,4 @@
-.message {
+/*.message {
 
 }
 
@@ -28,4 +28,57 @@
 
 .time {
 
+}*/
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 10px;
+    max-width: 100%;
 }
+
+/* Container for the avatar and message */
+.imageAndText {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse; /* Mirror the friend's message */
+}
+
+/* Avatar styles */
+.message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Message box */
+.text {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+/* Name inside the message */
+.name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* The actual message text */
+.messageText {
+    white-space: pre-wrap;
+}
+
+/* Time below the avatar */
+.time {
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+    text-align: center;
+}
+

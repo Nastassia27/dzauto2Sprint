@@ -1,4 +1,4 @@
-.sendForm {
+/*.sendForm {
 
 }
 
@@ -15,4 +15,59 @@
 }
 .button:active {
 
+}*/
+/* Container for the input field and button */
+.sendForm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background: #f9f9f9;
+}
+
+/* Textarea input */
+.textarea {
+    flex-grow: 1;
+    min-height: 40px;
+    max-height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none; /* Prevents manual resizing */
+    overflow-y: hidden;
+    background: white;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Focused input */
+.textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Send button */
+.button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Disabled button */
+.button:disabled {
+    background-color: #b5b1b1;
+    cursor: not-allowed;
 }
