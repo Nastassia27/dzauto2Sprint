@@ -1,3 +1,4 @@
+/*
 .input:focus {
 }
 
@@ -18,3 +19,46 @@
 
 .error {
 }
+*/
+.input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.superInput {
+    border: 1px solid #4caf50;
+    background-color: #f9fff9;
+}
+
+.errorInput {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+.errorInput:focus {
+    border-color: #b71c1c;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}
+
+.error {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
