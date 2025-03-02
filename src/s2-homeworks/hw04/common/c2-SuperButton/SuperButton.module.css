@@ -1,3 +1,4 @@
+/*
 .button {
 }
 
@@ -34,3 +35,63 @@
 
 .button:disabled {
 }
+*/
+.button {
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Default button */
+.default {
+    background-color: #007bff;
+    color: white;
+}
+
+.default:hover {
+    background-color: #0056b3;
+}
+
+.default:active {
+    background-color: #004085;
+}
+
+/* Red button */
+.red {
+    background-color: #dc3545;
+    color: white;
+}
+
+.red:hover {
+    background-color: #c82333;
+}
+
+.red:active {
+    background-color: #a71d2a;
+}
+
+/* Secondary button */
+.secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.secondary:hover {
+    background-color: #5a6268;
+}
+
+.secondary:active {
+    background-color: #495057;
+}
+
+/* Disabled state */
+.disabled,
+.button:disabled {
+    background-color: #d6d6d6;
+    color: #a1a1a1;
+    cursor: not-allowed;
+}
+
