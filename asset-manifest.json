@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/dzauto2Sprint/static/css/main.90d399e9.css",
-    "main.js": "/dzauto2Sprint/static/js/main.07ec7ad8.js",
+    "main.css": "/dzauto2Sprint/static/css/main.08e32bf6.css",
+    "main.js": "/dzauto2Sprint/static/js/main.8786845e.js",
     "static/js/453.6a2980d5.chunk.js": "/dzauto2Sprint/static/js/453.6a2980d5.chunk.js",
     "static/media/avatar.png": "/dzauto2Sprint/static/media/avatar.d947cb9d0d13765666b6.png",
+    "static/media/404.svg": "/dzauto2Sprint/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
+    "static/media/closeOutline.svg": "/dzauto2Sprint/static/media/closeOutline.b64ba402fac8a549bc2de97e9cf84a61.svg",
+    "static/media/checked.svg": "/dzauto2Sprint/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/dzauto2Sprint/index.html",
-    "main.90d399e9.css.map": "/dzauto2Sprint/static/css/main.90d399e9.css.map",
-    "main.07ec7ad8.js.map": "/dzauto2Sprint/static/js/main.07ec7ad8.js.map",
+    "static/media/burger.svg": "/dzauto2Sprint/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
+    "main.08e32bf6.css.map": "/dzauto2Sprint/static/css/main.08e32bf6.css.map",
+    "main.8786845e.js.map": "/dzauto2Sprint/static/js/main.8786845e.js.map",
     "453.6a2980d5.chunk.js.map": "/dzauto2Sprint/static/js/453.6a2980d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90d399e9.css",
-    "static/js/main.07ec7ad8.js"
+    "static/css/main.08e32bf6.css",
+    "static/js/main.8786845e.js"
   ]
 }
