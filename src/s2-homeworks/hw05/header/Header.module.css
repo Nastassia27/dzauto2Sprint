@@ -1,8 +1,28 @@
 .burgerMenuIcon {
+    width: 30px; /* Размер иконки бургера */
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px; /* Отступ слева */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .header {
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
 .header h1 {
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    right: 70px;
+    top: 17px;
+    margin: 0;
 }
