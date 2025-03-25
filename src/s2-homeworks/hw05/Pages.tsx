@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import {Routes, Route, Navigate} from 'react-router-dom'
 import Error404 from './pages/Error404'
 import PreJunior from './pages/PreJunior'
 import Junior from './pages/Junior'
@@ -18,15 +18,30 @@ function Pages() {
             <Routes>
                 {/*роутинг будут писать студенты*/}
                 {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу /pre-junior*/}
-                {/*<Route ...*/}
+                <Route path={'/'} element={<Navigate to={'/pre-junior'}/>}/>
 
                 {/*роуты для /pre-junior, /junior, /junior-plus*/}
-                {/*<Route ...*/}
-                {/*<Route ...*/}
-                {/*<Route ...*/}
+                <Route path={'/pre-junior'} element={<PreJunior/>}/>
+                <Route path={'/junior'} element={<Junior/>}/>
+                <Route path={'/junior-plus'} element={<JuniorPlus/>}/>
 
                 {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
-                {/*<Route ...*/}
+                <Route path={'/error404'} element={<Error404/>}/>
+                <Route path="/*" element={<Navigate to={'/error404'}/>}/>
+
+                {/*
+                    <div className={styles.nav}>
+                        <S.NavWrapper><NavLink to={PATH.PAGE1}>Page1</NavLink></S.NavWrapper>
+                        <S.NavWrapper><NavLink to={PATH.PAGE2}>Page2</NavLink></S.NavWrapper>
+                        <S.NavWrapper><NavLink to={PATH.PAGE3}>Page3</NavLink></S.NavWrapper>
+                        <div><NavLink to={"/3"} className={({ isActive }) =>
+                      isActive ? styles.activeNavLink : styles.navLink
+                  }>Page3</NavLink></div>
+                    </div>
+                    <div className={styles.content}>
+
+
+                    </div>*/}
             </Routes>
         </div>
     )
