@@ -1,4 +1,80 @@
 .sidebar {
+    position: fixed;
+    top: 0;
+    left: -317px; /* По умолчанию скрыто */
+    width: 317px;
+    height: 100vh;
+    background: white;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease-in-out;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100; /* Поверх затемнения */
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease-in-out;
+    pointer-events: none; /* Отключаем клики */
+}
+
+.background.visible {
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: auto; /* Включаем клики */
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.nav a {
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0;
+    display: block;
+    margin-bottom: 45px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: lightblue;
+    text-decoration: none;
+}
+
+.nav a.active {
+    color: blue;
+    text-decoration: underline;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close img {
+    width: 24px;
+    height: 24px;
+}
+
+/*
+.sidebar {
 }
 
 .sidebar.open {
@@ -23,3 +99,4 @@
 
 .close img {
 }
+*/
